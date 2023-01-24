@@ -31,3 +31,19 @@ psql -U postgres
 ```
 docker-compose down
 ```
+
+
+##### Show running dockers
+```
+docker ps
+```
+
+##### Show images
+```
+docker images
+```
+
+##### Delete docker images
+```
+docker images rm 53466ys56
+```

@@ -5,15 +5,19 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
+#### Test with hello-world docker, it may ask for sudo
+```
+docker run hello-world
+```
+
 #### To run Docker without root privileges
 ```
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
-docker run hello-world
 ```
 
-#### change its ownership and permissions
+#### Change its ownership and permissions
 ```
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 sudo chmod g+rwx "$HOME/.docker" -R

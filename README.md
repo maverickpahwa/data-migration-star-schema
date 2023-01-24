@@ -1,5 +1,8 @@
 # Migrating legacy denormalized data in CSV into a normalized dimensional schema 
 
+Docker: https://docs.docker.com/engine/reference/run/
+
+Compose: https://docs.docker.com/compose/reference/
 
 ##### Start the container in the background using -d detached mode
 ```

@@ -50,4 +50,8 @@ docker images
 ```
 docker images rm 53466ys56
 ```
-sales_dm=# copy stages from '/data/historical_orders_tumbleweed_capital.csv' CSV HEADER;
+sales_dm=# copy stage.LegacyOrders from '/data/historical_orders_tumbleweed_capital.csv' CSV HEADER;
+docker-compose down && docker image rm postgres && docker compose up -d && docker exec -it postgres bash
+
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index

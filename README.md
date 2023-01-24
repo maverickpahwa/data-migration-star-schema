@@ -1,4 +1,4 @@
-# data-migration-star-schema
+# Migrating legacy denormalized data in CSV into a normalized dimensional schema 
 
 
 ##### Start the container in the background

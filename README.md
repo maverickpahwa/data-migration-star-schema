@@ -27,7 +27,7 @@ psql -U postgres
 ```
 ##### Connect to our sales_dm
 ```
-\connect sales_Dm
+\connect sales_dm
 ```
 
 ##### Stop the Postgres service running
@@ -50,3 +50,4 @@ docker images
 ```
 docker images rm 53466ys56
 ```
+sales_dm=# copy stages from '/data/historical_orders_tumbleweed_capital.csv' CSV HEADER;

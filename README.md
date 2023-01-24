@@ -1,7 +1,7 @@
 # Migrating legacy denormalized data in CSV into a normalized dimensional schema 
 
 
-##### Start the container in the background
+##### Start the container in the background using -d detached mode
 ```
 docker compose up -d
 ```
@@ -25,4 +25,9 @@ psql -U postgres
 ##### Connect to our sales_dm
 ```
 \connect sales_Dm
+```
+
+##### Stop the Postgres service running
+```
+docker-compose down
 ```

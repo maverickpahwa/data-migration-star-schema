@@ -8,7 +8,7 @@ SET search_path = dm, pg_catalog;
 SET default_tablespace = '';
 SET default_with_oids = false;
 
-CREATE TABLE stage.LegacyOrders (
+CREATE TABLE IF NOT EXISTS stage.LegacyOrders (
     order_id TEXT NOT NULL,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE stage.LegacyOrders (
     order_total TEXT NOT NULL
 );
 
-CREATE TABLE DimCustomers(
+CREATE TABLE IF NOT EXISTS DimCustomers(
     customer_id TEXT NOT NULL,
     first_name TEXT NOT NULL,
     last_name TEXT NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE DimCustomers(
     email TEXT NOT NULL
 );
 
-create table DimAddressHistory(
+create table IF NOT EXISTS DimAddressHistory(
     customer_id TEXT NOT NULL,
     street_number TEXT NULL,
     city TEXT NULL,
